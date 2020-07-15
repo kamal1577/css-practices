@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        /*  div > p  will affect all p inside div only excluding any p inside span*/
+       
+       /* div + p will affect the first p after div */
+        div + p{ 
+            background-color: red;
+        }
+        /*  div ~ p will affect all p after div */
+        /* div ~ p {
+                background-color :lightgreen;
+        } */
+      /* affect the first input after div*/
+       div + input {
+                background-color: yellow;
+        }
+        div > input {
+            background-color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello 1</p>
+    <p>Hello 2</p>
+    <div>
+        <input /> 
+        <p>Hello 3</p>
+        <p>Hello 4</p>
+        <p>Hello 5</p>
+        <p>Hello 6</p>
+        <span><p>Hello in span</p></span>
+    </div>    
+    <p>Hello 7</p>
+    <p>Hello 8</p>
+    <p>Hello 9</p>
+    <p>Hello 10</p>
+    <p>Hello 11</p>
+    <div>
+        <p>Hello 12</p>
+        <p>Hello 13</p>
+      
+        
+    </div>
+    <input /> 
+    <p>Hello 14</p>
+    <p>Hello 15</p>
+    <input />
+    
+</body>
+</html>
